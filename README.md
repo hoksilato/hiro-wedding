@@ -1,24 +1,33 @@
-# README
+Frontend
+========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mỗi người sẽ nhận được 1 thiệp mời, trong thiệp mời sẽ có 1 card, trên card có:
+- QR code (chứa link bên dưới)
+- Link
+- Code
 
-Things you may want to cover:
 
-* Ruby version
+Vào link trên:
+* Nếu chưa đăng ký thì sẽ hiện form để nhập
+  - Code (mặc định nhập nếu vào bằng QR code hoặc link)
+  - Số người tham gia
+* Nếu đã đăng ký thì hiện các thông tin
+  - Tên
+  - Số người tham gia
+  - Số bàn
 
-* System dependencies
 
-* Configuration
+Backend
+=======
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Các field khác của User
+  - Code
+  - Tên
+  - Group
+  - Số người tham gia
+  - Số bàn
+  - Note
+* CRUD
+* Import
+* Export
+* Statistics
