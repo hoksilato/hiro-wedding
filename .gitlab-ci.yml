@@ -1,0 +1,13 @@
+before_script:
+  - rbenv install --skip-existing `cat .ruby-version`
+  - ruby -v
+  - which ruby
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install
+  - bundle exec rails db:migrate RAILS_ENV=test
+
+rspec:
+  script:
+    - bundle exec rspec
+  tags:
+    - ruby
