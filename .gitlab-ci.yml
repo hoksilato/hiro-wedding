@@ -5,16 +5,17 @@ cache:
   paths:
     - vendor/ruby
 
+services:
+  - postgres:latest
+
 before_script:
-  - apt-get update -qq && apt-get install -yqq postgresql postgresql-contrib nodejs
+  - apt-get update -qq && apt-get install -yqq nodejs
   - ruby -v
   - which ruby
   - gem install bundler --no-ri --no-rdoc
-  - bundle install --jobs $(nproc) "${FLAGS[@]}" --path vendor
-
-rails:
-  script:
+  - bundle install --jobs $(nproc) "${FLAGS[@]}" --path=/cache/bundler
   - bundle exec rails db:migrate RAILS_ENV=test
+  - bundle exec rails db:reset RAILS_ENV=test
 
 rspec:
   script:
