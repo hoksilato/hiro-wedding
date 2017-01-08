@@ -8,6 +8,9 @@ cache:
 services:
   - postgres:latest
 
+variables:
+  POSTGRES_DB: wedding_test
+
 before_script:
   - apt-get update -qq && apt-get install -yqq nodejs
   - ruby -v
@@ -18,6 +21,8 @@ before_script:
   - bundle exec rails db:reset RAILS_ENV=test
 
 rspec:
+  variables:
+    DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/$POSTGRES_DB"
   script:
     - bundle exec spring rspec spec
   tags:
