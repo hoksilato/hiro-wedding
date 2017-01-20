@@ -17,5 +17,7 @@ module Wedding
       g.helper = false
       g.decorator = false
     end
+
+    config.serve_static_assets = true
   end
 end
