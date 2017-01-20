@@ -1,4 +1,5 @@
 ActiveAdmin.register Visitor do
+  menu priority: 1
   permit_params :name, :code, :group_id, :num, :table, :note
 
   scope :all
