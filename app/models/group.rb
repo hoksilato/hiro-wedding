@@ -10,4 +10,7 @@
 #
 
 class Group < ApplicationRecord
+  has_many :visitors
+
+  validates :name, presence: true
 end
