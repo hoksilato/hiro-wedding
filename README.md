@@ -39,3 +39,12 @@ Backend
 * Import
 * Export
 * Statistics
+
+Guide
+=====
+
+Import
+------
+
+* Nếu cột ID có giá trị sẽ ghi đè lên với giá trị mới.
+* Tên group (Group name) phải chính xác như các groups đã có trong hệ thống.

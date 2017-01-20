@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/activeadmin-plugins/active_admin_import.git
+  revision: 206d7e9051238c75fbf48f645df9988b4c77a284
+  specs:
+    active_admin_import (3.0.0.pre)
+      activerecord-import (>= 0.16.1)
+      rails (>= 4.0)
+      rchardet (~> 1.6)
+      rubyzip (~> 1.2)
+
+GIT
   remote: git://github.com/activeadmin/activeadmin.git
   revision: 169bad98f2746be19b71357bb16a81065640a337
   specs:
@@ -53,6 +63,7 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active_admin_theme (1.0.3)
     activejob (5.0.1)
       activesupport (= 5.0.1)
       globalid (>= 0.3.6)
@@ -254,6 +265,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rchardet (1.6.1)
     reform (2.2.3)
       disposable (>= 0.3.0, < 0.4.0)
       representable (>= 2.4.0, < 3.1.0)
@@ -349,6 +361,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_admin_import!
+  active_admin_theme
   activeadmin!
   activerecord-import
   annotate

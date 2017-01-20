@@ -33,6 +33,10 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'devise'
 
+# Activeadmin plugins
+gem 'active_admin_theme'
+gem "active_admin_import" , github: "activeadmin-plugins/active_admin_import"
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'
