@@ -1,0 +1,29 @@
+body {
+	background-image:url(../images/red/main_back.jpg);
+}
+h2 {
+	color:#e93b38
+}
+h2:after {
+	background: url(../images/red/bullet.png);
+	background-size: cover;
+}
+
+.btn {
+	color:#e93b38!important;
+	border: 2px solid #e93b38
+
+}
+.btn:hover {
+	background:#e93b38;
+	color:#fff!important
+}
+.btn:active, .btn:focus {
+	background:#e93b38;
+}
+.paper {
+	background:url(../images/red/paper.jpg);
+}
+.paper .paper_title {
+	color: #e93b38;
+}
