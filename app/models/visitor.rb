@@ -16,6 +16,10 @@
 class Visitor < ApplicationRecord
   belongs_to :group
 
+  validates :code, presence: true
+  validates :name, presence: true
+  validates :group, presence: true
+
   scope :confirmed, ->{ where.not(num: nil) }
   scope :unconfirmed, ->{ where(num: nil) }
   scope :assinged_table, ->{ where.not(table: nil).where.not(num: nil) }

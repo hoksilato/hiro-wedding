@@ -1,0 +1,16 @@
+<%= form_for rsvp, url: rsvp_path, authenticity_token: true do |f| %>
+  <div class="txt_input">
+    <%= f.text_field :code, class: 'form-control', placeholder: 'Your Code',
+                            value: (params[:code] if params[:code].present?) %>
+    <%= form_error(rsvp, :code) %>
+  </div>
+  <div class="txt_input">
+    <%= f.text_field :num, class: 'form-control', placeholder: '# Attending' %>
+    <%= form_error(rsvp, :num) %>
+  </div>
+  <%= submit_tag 'Send', class: 'btn btn-lg submit_block_1' %>
+<% end %>
+
+<!-- Form Additional text -->
+<p>We’re excited to see you! Any questions, just email us at:<br/>
+<a href="mailto:hieunguyengmx@gmail.com">hieunguyengmx@gmail.com</a></p>

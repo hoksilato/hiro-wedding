@@ -1,1 +1,20 @@
-<%= @result.message %>
+<section class="rsvp" id="rsvp">
+  <div class="into_firefly"></div>
+  <div class="container">
+    <h2>Join Our Party</h2>
+
+    <div id="envelope" data-100-top="@class:active" data-200-bottom="@class: ">
+      <div class="paper">
+
+        <!-- End Date of Reservation -->
+        <div class="paper_title">Please RSVP by March 2nd</div>
+
+        <!-- Form -->
+        <div id="div_block_1">
+          <%= render partial: 'home/form', locals: {rsvp: @rsvp} %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
