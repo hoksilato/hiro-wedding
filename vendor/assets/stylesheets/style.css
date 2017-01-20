@@ -3,7 +3,6 @@ body {
 	min-height:100%;
 	height:100%;
 	color:#666666;
-
 }
 body b {
 	font:500 15px/24px Dancing Script;
@@ -16,7 +15,6 @@ html {
 	min-height:100%;
 	position:relative;
 	height:100%;
-
 }
 section {
 	width:100%;
@@ -76,7 +74,6 @@ h2:after {
 }
 .paper {
 	width:534px;
-	height:336px;
 	padding:20px;
 	position:relative;
 	left:50%;
@@ -100,7 +97,6 @@ h2:after {
 	margin: 0 0 0 -267px;
 	transition-delay:0;
 	transition:0.3s all ease-out;
-
 }
 
 .form-control {
