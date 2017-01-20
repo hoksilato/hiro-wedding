@@ -28,6 +28,11 @@ gem 'ransack'
 # For create validators
 gem 'reform-rails'
 
+# Admin
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'devise'
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'
