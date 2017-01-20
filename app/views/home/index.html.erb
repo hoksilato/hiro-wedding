@@ -11,19 +11,7 @@
 
         <!-- Form -->
         <div id="div_block_1">
-          <form>
-            <div class="txt_input">
-              <input type="text" class="form-control" id="name_block_1"  placeholder="Your Code">
-            </div>
-            <div class="txt_input">
-              <input type="text" class="form-control" id="attending_block_1"  placeholder="# Attending">
-            </div>
-            <input name="" type="submit" value="Send" class="btn btn-lg submit_block_1">
-          </form>
-
-          <!-- Form Additional text -->
-          <p>We’re excited to see you! Any questions, just email us at:<br/>
-          <a href="mailto:hieunguyengmx@gmail.com">hieunguyengmx@gmail.com</a></p>
+          <%= render partial: 'home/form', locals: {rsvp: @rsvp} %>
         </div>
       </div>
 

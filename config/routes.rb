@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   root to: 'home#index'
+  post 'rsvp' => 'home#create'
+  get 'show' => 'home#show'
 end

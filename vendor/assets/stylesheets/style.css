@@ -66,7 +66,22 @@ h2:after {
 	z-index:3;
 	position:absolute
 }
-
+.white_txt {
+	color:#fff;
+	background-color:#65666b
+}
+.white_txt h2 {
+	color:#fff
+}
+.white_txt h2 span:after {
+	background:#fff
+}
+.white_txt .slash i{
+	background:#fff
+}
+.white_txt a {
+	color: #fff
+}
 .rsvp {
 	overflow: visible;
 }
@@ -123,9 +138,122 @@ h2:after {
 	position:relative
 }
 
+/*# 11. Where&When*/
+.when_where {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.when_where .container {
+}
+.when_where_container {
+	z-index:2;
+	position:relative;
+}
+.when_where_container .title3 {
+	width: 300px;
+	margin: 0 auto
+}
+.when_where_container .title4 {
+	margin: 0 auto
+}
+.when_where .over {
+	width:100%;
+	height:100%;
+	z-index:0;
+	display:block;
+	content:"";
+	position:absolute;
+	top:0;
+	left:0
+}
+.when_where h2 {
+	margin:0 0 50px 0;
+	opacity: 0.8
+}
+.when_where h2:after {
+	display: none
+}
+.pattern1 {
+	background: url(../images/venz1.png);
+	background-size: cover;
+	width: 122px;
+	height: 28px;
+	margin: 0 auto 20px
+}
+.pattern2 {
+	background: url(../images/venz4.png);
+	background-size: cover;
+	width: 142px;
+	height: 8px;
+	margin: 20px auto
+}
+.pattern3 {
+	background: url(../images/venz5.png);
+	background-size: cover;
+	width: 73px;
+	height: 24px;
+	margin: 20px auto 0
+}
+.title0 {
+	font:300 16px/28px Roboto Condensed;
+	color:rgba(255,255,255,0.5);
+}
+.title1 {
+	font:46px/48px Great Vibes;
+}
+.title1_2 {
+	text-indent:-15px;
+	font:52px/56px Great Vibes;
+}
+.title2 {
+	font:56px/60px Roboto Condensed;
+	margin:0 0 13px 0;
+	letter-spacing: -1px
+}
+.title3 {
+	font:24px/32px Roboto Condensed;
+	margin:0 0 5px 0;
+}
+.title4 {
+	font:300 34px/40px Roboto Condensed;
+	text-transform:uppercase
+}
+.title5 {
+	font: 300 14px/24px Roboto Condensed;
+	text-transform: uppercase;
+	margin: -5px 0 20px
+}
+.clock_icon {
+	margin:50px 0 0 0
+}
+
+.hotel .container {
+	padding-bottom: 0
+}
+
+@keyframes camera-pulse {
+	0% {
+		transform:scale(1);
+		opacity:0.6
+	}
+	30% {
+		transform:scale(1.3);
+		opacity:1
+	}
+	100% {
+		transform:scale(1);
+		opacity:0.6
+	}
+}
+
 @media (max-width:768px){
 	#envelope {
 		min-height:200px!important;
+	}
+	.when_where {
+		background-attachment: scroll;
 	}
 	.paper {
 		width: 100%;
@@ -156,3 +284,4 @@ h2:after {
 		padding:0;
 	}
 }
+
