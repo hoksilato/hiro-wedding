@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   private
   def create_operation
-    find_operation.new(params, request, @resource)
+    find_operation.new(params, request)
   end
 
   def find_operation
