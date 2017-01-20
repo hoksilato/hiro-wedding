@@ -15,4 +15,9 @@
 
 class Visitor < ApplicationRecord
   belongs_to :group
+
+  scope :confirmed, ->{ where.not(num: nil) }
+  scope :unconfirmed, ->{ where(num: nil) }
+  scope :assinged_table, ->{ where.not(table: nil).where.not(num: nil) }
+  scope :not_assigned_table, ->{ where(table: nil).where.not(num: nil) }
 end
