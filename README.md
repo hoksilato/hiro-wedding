@@ -1,11 +1,3 @@
-Master
-[![build status](https://gitlab.com/hoksilato/hiro-wedding/badges/master/build.svg)](https://gitlab.com/hoksilato/hiro-wedding/commits/master)
-[![coverage report](https://gitlab.com/hoksilato/hiro-wedding/badges/master/coverage.svg)](https://gitlab.com/hoksilato/hiro-wedding/commits/master)
-
-Develop:
-[![build status](https://gitlab.com/hoksilato/hiro-wedding/badges/develop/build.svg)](https://gitlab.com/hoksilato/hiro-wedding/commits/develop)
-[![coverage report](https://gitlab.com/hoksilato/hiro-wedding/badges/develop/coverage.svg)](https://gitlab.com/hoksilato/hiro-wedding/commits/develop)
-
 Frontend
 ========
 
