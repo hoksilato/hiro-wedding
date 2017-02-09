@@ -1,7 +1,10 @@
 class HomeController < ApplicationController
   def index
     if params[:code].present?
-      return redirect_to_show(Visitor.find_by_code(params[:code])) if Visitor.exists?(code: params[:code])
+      if Visitor.exists?(code: params[:code])
+        visitor = Visitor.find_by_code(params[:code])
+        return redirect_to_show(visitor) if visitor.num.present?
+      end
     end
 
     render_index
