@@ -33,7 +33,7 @@ a {
 	max-width: 970px
 }
 h2 {
-	font:46px/48px Great Vibes;
+	font:46px/48px Dancing Script;
 	text-align:center;
 	margin:0 0 20px 0;
 }
@@ -201,11 +201,11 @@ h2:after {
 	color:rgba(255,255,255,0.5);
 }
 .title1 {
-	font:46px/48px Great Vibes;
+	font:46px/48px Dancing Script;
 }
 .title1_2 {
 	text-indent:-15px;
-	font:52px/56px Great Vibes;
+	font:52px/56px Dancing Script;
 }
 .title2 {
 	font:56px/60px Roboto Condensed;
@@ -267,7 +267,7 @@ h2:after {
 
 @media (max-width:480px){
 	h2 {
-		font:34px/40px Great Vibes
+		font:34px/40px Dancing Script
 	}
 	.paper h2 {
 		font-size:28px!important

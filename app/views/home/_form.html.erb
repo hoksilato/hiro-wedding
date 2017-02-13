@@ -1,16 +1,16 @@
 <%= form_for rsvp, url: rsvp_path, authenticity_token: true do |f| %>
   <div class="txt_input">
-    <%= f.text_field :code, class: 'form-control', placeholder: 'Your Code',
+    <%= f.text_field :code, class: 'form-control', placeholder: 'Ký hiệu khách mời',
                             value: (params[:code] if params[:code].present?) %>
     <%= form_error(rsvp, :code) %>
   </div>
   <div class="txt_input">
-    <%= f.text_field :num, class: 'form-control', placeholder: '# Attending' %>
+    <%= f.text_field :num, class: 'form-control', placeholder: 'Số người tham dự' %>
     <%= form_error(rsvp, :num) %>
   </div>
-  <%= submit_tag 'Send', class: 'btn btn-lg submit_block_1' %>
+  <%= submit_tag 'Xác nhận', class: 'btn btn-lg submit_block_1' %>
 <% end %>
 
 <!-- Form Additional text -->
-<p>We’re excited to see you! Any questions, just email us at:<br/>
-<a href="mailto:hieunguyengmx@gmail.com">hieunguyengmx@gmail.com</a></p>
+<p>Các câu hỏi vui lòng gửi email đến:<br/>
+<a href="mailto:hirohieunguyen@gmail.com">hirohieunguyen@gmail.com</a> hoặc điện thoại 0933369697. Xin cám ơn!</p>
