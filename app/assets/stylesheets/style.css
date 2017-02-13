@@ -68,7 +68,7 @@ h2:after {
 }
 .white_txt {
 	color:#fff;
-	background-color:#65666b
+	background-color:rgba(101, 102, 107, 1);
 }
 .white_txt h2 {
 	color:#fff
@@ -158,7 +158,7 @@ h2:after {
 .when_where_container .title4 {
 	margin: 0 auto
 }
-.when_where .over {
+.when_where .over, .rsvp .over {
 	width:100%;
 	height:100%;
 	z-index:0;
