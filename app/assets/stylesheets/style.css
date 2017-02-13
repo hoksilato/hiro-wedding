@@ -84,6 +84,11 @@ h2:after {
 }
 .rsvp {
 	overflow: visible;
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+	height: 100%;
 }
 
 #envelope {
