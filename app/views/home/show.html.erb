@@ -3,19 +3,24 @@
   <div class="over"></div>
   <div class="container">
     <div class="when_where_container opacity">
-      <h2>Trân trọng kính mời quý vị đến dự bữa cơm thân mật mừng Lễ thành hôn của con chúng tôi
-      <br/><br/>Nguyễn Trung Hiếu &amp; Trần Thị Thu Hường</h2>
+      <div class="title4"><%= @visitor.name %> - <%= @visitor.code %><br><%= @visitor.num %> người - bàn số <span style="color:yellow;"><%= @visitor.table.to_i %></span></div>
+      <div class="pattern2"></div>
+
+      <h2 style="margin-top: 50px;">Nguyễn Trung Hiếu &amp; Trần Thị Thu Hường</h2>
       <!-- Texts -->
       <div class="pattern1"></div>
       <div class="title1">19:00</div>
-      <div class="title5">Thứ bảy - 04/03/2017</div>
-      <div class="title1">Khách sạn Rex</div>
-      <div class="title2">141 Nguyễn Huệ, Quận 1, TPHCM</div>
-      <div class="title3"><a href="https://goo.gl/maps/ngi3HiTjNMw" target="_blank">
+      <div class="title5" style="font-size: 18px;">Thứ bảy - 04/03/2017</div>
+      <div class="title2" style="font-weight: bold;">Khách sạn Rex</div>
+      <div class="title1">141 Nguyễn Huệ, Quận 1, TPHCM</div>
+      <div class="title3" style="font-size: 20px;"><a href="https://goo.gl/maps/ngi3HiTjNMw" target="_blank">
       <br />(đối diện UBND TPHCM)</a><br /><i class="flaticon-map35"></i> </div>
 
       <div class="pattern2"></div>
-      <div class="title4"><%= @visitor.name %> - <%= @visitor.code %><br><%= @visitor.num %> người - bàn số <span style="color:yellow;"><%= @visitor.table.to_i %></span></div>
+      <div class="title3">Đón khách: 18h00</div>
+      <div class="title3">Khai tiệc: 19h00</div>
+      <div class="title3" style="font-weight: bold; width: 700px; margin-top: 10px;">Sự hiện diện của quý vị là niềm vinh hạnh cho gia đình chúng tôi!</div>
+      <div class="title3" style="width: 500px;"><a href="mailto:hirohieunguyen@gmail.com">hirohieunguyen@gmail.com</a>, 0933369697</div>
       <div class="pattern3"></div>
     </div>
   </div>

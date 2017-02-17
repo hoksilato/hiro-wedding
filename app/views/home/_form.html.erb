@@ -1,6 +1,6 @@
 <%= form_for rsvp, url: rsvp_path, authenticity_token: true do |f| %>
   <div class="txt_input">
-    <%= f.text_field :code, class: 'form-control', placeholder: 'Ký hiệu khách mời',
+    <%= f.text_field :code, class: 'form-control', placeholder: 'Guest code',
                             value: (params[:code] if params[:code].present?) %>
     <%= form_error(rsvp, :code) %>
   </div>
@@ -12,5 +12,4 @@
 <% end %>
 
 <!-- Form Additional text -->
-<p>Các câu hỏi vui lòng gửi email đến:<br/>
-<a href="mailto:hirohieunguyen@gmail.com">hirohieunguyen@gmail.com</a> hoặc điện thoại 0933369697. Xin cám ơn!</p>
+<p><a href="mailto:hirohieunguyen@gmail.com">hirohieunguyen@gmail.com</a>, 0933369697</p>
