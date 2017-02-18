@@ -2566,12 +2566,18 @@ output {
 .form-control::-moz-placeholder {
   color: #999;
   opacity: 1;
+  font-style: italic;
+  font-weight: 300;
 }
 .form-control:-ms-input-placeholder {
   color: #999;
+  font-style: italic;
+  font-weight: 300;
 }
 .form-control::-webkit-input-placeholder {
   color: #999;
+  font-style: italic;
+  font-weight: 300;
 }
 .form-control[disabled],
 .form-control[readonly],

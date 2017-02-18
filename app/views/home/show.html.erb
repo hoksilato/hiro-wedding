@@ -1,29 +1,58 @@
+<style type="text/css">
+  h2 {
+    font: 46px Lobster;
+    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .when_where {
+    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
+  }
+
+  .when_where h2 {
+    color: #e93b38;
+    margin: 20px 0 20px 0;
+    opacity: 1;
+  }
+
+  .title1 {
+    font-family: Lobster;
+  }
+
+  .title3 {
+    font-weight: 300;
+  }
+</style>
 <section class="when_where white_txt parallax" id="when_where" style="background-image: url('/images/1.jpg')">
   <div class="into_firefly"></div>
   <div class="over"></div>
   <div class="container">
     <div class="when_where_container opacity">
       <div class="title4">
-        <%= @visitor.name %> - <%= @visitor.code %>
+        <strong><%= @visitor.name %> - <%= @visitor.code %></strong>
         <br><%= @visitor.num %> người - bàn <span style="color:yellow;"><%= @visitor.table || "<Chưa xác định>" %></span></div>
       <div class="pattern2"></div>
 
-      <h2 style="margin-top: 50px;">Nguyễn Trung Hiếu &amp; Trần Thị Thu Hường</h2>
+      <h2>Nguyễn Trung Hiếu &amp; Trần Thị Thu Hường</h2>
       <!-- Texts -->
       <div class="pattern1"></div>
       <div class="title1">19:00</div>
       <div class="title5" style="font-size: 18px;">Thứ bảy - 04/03/2017</div>
-      <div class="title2" style="font-weight: bold;">Khách sạn Rex</div>
-      <div class="title1">141 Nguyễn Huệ, Quận 1, TPHCM</div>
-      <div class="title3" style="font-size: 20px;"><a href="https://goo.gl/maps/ngi3HiTjNMw" target="_blank">
-      <br />(đối diện UBND TPHCM)</a><br /><i class="flaticon-map35"></i> </div>
+      <div class="title2" style="font-weight: bold; font-size: 34px; margin-bottom: 0;">KHÁCH SẠN REX</div>
+      <div class="title5">141 Nguyễn Huệ, Quận 1, TPHCM</div>
+      <div class="title3" style="font-size: 18px; margin-top: 37px;">
+        <a href="https://goo.gl/maps/ngi3HiTjNMw" target="_blank">(ĐỐI DIỆN UBND TPHCM)</a>
+        <br /><i class="flaticon-map35"></i>
+      </div>
 
       <div class="pattern2"></div>
-      <div class="title3">Đón khách: 18h00</div>
-      <div class="title3">Khai tiệc: 19h00</div>
-      <div class="title3" style="font-weight: bold; width: 700px; margin-top: 10px;">Sự hiện diện của quý vị là niềm vinh hạnh cho gia đình chúng tôi!</div>
-      <div class="title3" style="width: 500px;"><a href="mailto:hirohieunguyen@gmail.com">hirohieunguyen@gmail.com</a>, 0933369697</div>
-      <div class="pattern3"></div>
+      <div class="title3" style="font-size: 18px;">ĐÓN KHÁCH: 18h00</div>
+      <div class="title3" style="font-size: 18px;">KHAI TIỆC: 19h00</div>
+      <div class="title3" style="width: 700px; margin-top: 30px;">Sự hiện diện của quý vị là niềm vinh hạnh cho gia đình chúng tôi!</div>
+      <div class="pattern3" style="margin-bottom: 15px;"></div>
+      <div class="title3" style="width: 500px; font-weight: 300;"><a href="mailto:hirohieunguyen@gmail.com">hirohieunguyen@gmail.com</a>, 0933369697</div>
     </div>
   </div>
 </section>
