@@ -5,7 +5,7 @@ class Rsvp
 
   validates :code, presence: true
   validates :num, presence: true
-  validates :num, numericality: { only_integer: true, greater_than: 0 }
+  validates :num, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
   # Access the visitor record after it's saved
   attr_reader :visitor
